@@ -1,0 +1,18 @@
+{
+	"NAME":"StructuralTubingRestructured",
+	"URL":"http://ksp-avc.cybutek.net/version.php?id=236",
+	"DOWNLOAD":"https://kerbalstuff.com/mod/1342/EditorExtensionsRedux/download",
+	"VERSION":
+	{
+		"MAJOR":1,
+		"MINOR":0,
+		"PATCH":7,
+		"BUILD":0
+	},
+	"KSP_VERSION":
+	{
+		"MAJOR":1,
+		"MINOR":4,
+		"PATCH":1
+	}
+}

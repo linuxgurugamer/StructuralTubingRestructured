@@ -1,0 +1,173 @@
+PART
+{
+	name = Tube300
+	module = Part
+	author = DK
+		 MODEL
+	{
+		model = DKSalvage/Parts/Structural/Straight300cm/Tube300
+		scale = 1.0, 1.0, 1.0
+	}
+	rescaleFactor = 1
+		NODE
+{
+name = tube_Node1
+transform = tube_Node1
+size = 1
+method = FIXED_JOINT //FIXED_JOINT, HINGE_JOINT, LOCKED_JOINT, MERGED_PHYSICS or NO_PHYSICS
+}
+		NODE
+{
+name = tube_Node2
+transform = tube_Node2
+size = 1
+method = FIXED_JOINT //FIXED_JOINT, HINGE_JOINT, LOCKED_JOINT, MERGED_PHYSICS or NO_PHYSICS
+}
+	//node_attach = ****************
+	TechRequired = generalConstruction
+	entryCost = 1000
+	cost = 15
+	category = Structural
+	subcategory = 0
+	title = Structural Tubing, 300cm
+	manufacturer = DK
+	description = A pipe so tiny, it only took 3 coffee cans to make. You must be working on nesting rovers. You know, like a rover within a rover? like the Russian dolls? Ah, nevermind. Enjoy!
+	attachRules = 1,1,1,1,1
+	mass = 0.008
+	dragModelType = default
+	maximum_drag = 0.13
+	minimum_drag = 0.16
+	angularDrag = .25
+	crashTolerance = 80
+	breakingForce = 200
+	breakingTorque = 200
+	maxTemp = 2000 // = 3200
+	fuelCrossFeed = False
+	bulkheadProfiles = size0, srf
+	tags = connect frame scaffold structur strut truss DK Salvage tube pipe roll cage straight 300 0.3 .3 1/3 cm centimeter tiny Vern Troyer
+	
+		MODULE
+	{
+		name = ModuleToggleCrossfeed
+		crossfeedStatus = false
+		toggleEditor = true
+		toggleFlight = true
+	}
+
+						MODULE
+	{
+		 name = FStextureSwitch2
+		moduleID = 0
+		
+		objectNames = Tube300
+		textureNames = DKSalvage/Parts/FStextureSwitch2Textures/Camo1;DKSalvage/Parts/FStextureSwitch2Textures/Camo2;DKSalvage/Parts/FStextureSwitch2Textures/green1;DKSalvage/Parts/FStextureSwitch2Textures/Hot1;DKSalvage/Parts/FStextureSwitch2Textures/grey;DKSalvage/Parts/FStextureSwitch2Textures/Texture;DKSalvage/Parts/FStextureSwitch2Textures/HiVis;DKSalvage/Parts/FStextureSwitch2Textures/KonstructorYellow;DKSalvage/Parts/FStextureSwitch2Textures/Orange;DKSalvage/Parts/FStextureSwitch2Textures/RacingRed;DKSalvage/Parts/FStextureSwitch2Textures/Sandstorm
+		textureDisplayNames = CamoNature;UrbanCamo;green;Hot1;Stockalike;DKSalvage;HighVisibility;USI;Search&Rescue;RacecarRed;Sandstorm
+		nextButtonText = Next Color
+		prevButtonText = Previous Color
+		statusText = Current Color
+		showPreviousButton = true
+		updateSymmetry = true
+		showInfo = false
+		debugMode = false
+		// show or hide the List Objects button. Disabled by default. Should only be on while developing the part. Outputs a list of gameObjects in the part to the Alt+F2 log
+		showListButton = false
+	}
+
+	MODULE
+	{
+		name = ModuleTestSubject
+		useStaging = False
+		useEvent = True
+		situationMask = 127
+		CONSTRAINT
+		{
+			type = REPEATABILITY
+			value = ALWAYS
+			prestige = Trivial
+		}
+		CONSTRAINT
+		{
+			type = REPEATABILITY
+			value = BODYANDSITUATION
+			prestige = Significant
+		}
+		CONSTRAINT
+		{
+			type = REPEATABILITY
+			value = ONCEPERPART
+			prestige = Exceptional
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDE
+			test = GT
+			value = 0 // this just registers altitude as something to care about
+			situationMask = 8
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = GT
+			value = 1000
+			prestige = Trivial
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = LT
+			value = 2000
+			prestige = Trivial
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = GT
+			value = 500
+			prestige = Significant
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = LT
+			value = 1000
+			prestige = Significant
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = GT
+			value = 250
+			prestige = Exceptional
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDEENV
+			test = LT
+			value = 500
+			prestige = Exceptional
+		}
+		CONSTRAINT
+		{
+			type = SPEED
+			test = LT
+			value = 500
+			situationMask = 8
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDE
+			test = LT
+			value = 85000
+			situationMask = 16
+			body = _NotSun
+		}
+		CONSTRAINT
+		{
+			type = ALTITUDE
+			test = LT
+			value = 150000
+			situationMask = 32
+			body = _NotSun
+		}
+	}
+}

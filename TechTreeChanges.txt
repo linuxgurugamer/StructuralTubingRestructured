@@ -1,0 +1,48 @@
+"Engineering101" 		- tier 2 - 5 sci - R&D cost 500
+engineering101
+
+	-Straight250cm
+	-Straight500cm
+
+"General Construction" 		- tier 4 - 45 sci - R&D cost 1000
+generalConstruction
+
+	-Straight300cm
+	-Straight1m
+	-Elbow90
+	-SmallH
+	-TeeHalf
+
+"Advanced Construction" 	- tier 5 - 90 sci - R&D cost 2000
+advConstruction
+
+
+	-Ball Valve
+	-ElbowShort90
+	-Elbow45
+	-Elbow180
+	-LargeH
+	-crosshalf
+
+"Specialized Construction" 	- tier 6 - 160 sci - R&D cost 4000
+specializedConstruction
+
+	-Tubular Platform
+	-Torus0625
+	-Straight5m
+	-Elbow180b
+	-Tube1x2H
+	-ElbowDouble45
+	-Short45TeeL
+	-Short45TeeR
+
+"Composites" 			- tier 7 - 300 sci - R&D cost 8000
+composites
+
+	-Torus125
+	-T90Tee
+
+"Meta Materials"		- tier 8 - 550 sci - R&D cost 16000
+metaMaterials
+
+	-Torus250
