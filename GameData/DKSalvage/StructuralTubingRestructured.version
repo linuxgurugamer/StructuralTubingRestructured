@@ -1,7 +1,12 @@
 {
 	"NAME":"StructuralTubingRestructured",
-	"URL":"http://ksp-avc.cybutek.net/version.php?id=236",
-	"DOWNLOAD":"https://kerbalstuff.com/mod/1342/EditorExtensionsRedux/download",
+	"URL":"https://raw.githubusercontent.com/linuxgurugamer/StructuralTubingRestructured/master/StructuralTubingRestructured.version",
+	"DOWNLOAD":"https://github.com/linuxgurugamer/StructuralTubingRestructured/releases",
+	"GITHUB" :
+	{
+		"USERNAME" : "linuxgurugamer",
+		"REPOSITORY" : "StructuralTubingRestructured"
+	},
 	"VERSION":
 	{
 		"MAJOR":1,

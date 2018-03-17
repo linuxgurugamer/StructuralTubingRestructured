@@ -5,6 +5,9 @@ set ZIP="c:\Program Files\7-zip\7z.exe"
 
 
 copy StructuralTubingRestructured.version GameData\DKSalvage
+copy LICENSE.txt GameData\DKSalvage
+copy README.txt GameData\DKSalvage
+
 copy StructuralTubingRestructured.version a.version
 
 set VERSIONFILE=a.version
