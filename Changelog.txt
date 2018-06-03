@@ -2,6 +2,9 @@
 |   CHANGELOG (latest first):   |
 +-------------------------------+
 
+1.0.7.1
+	Updated .version file for all 1.4
+
 1.0.7
 	Adoption by LinuxGuruGamer
 	Updated mod for compatibility with KSP 1.4.1, now uses stock texture
