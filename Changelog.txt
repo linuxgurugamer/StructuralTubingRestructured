@@ -4,6 +4,7 @@
 
 1.0.7.1
 	Updated .version file for all 1.4
+	Added Jenkins build
 
 1.0.7
 	Adoption by LinuxGuruGamer
