@@ -1,6 +1,6 @@
 {
     "NAME": "StructuralTubingRestructured",
-    "URL": "https://raw.githubusercontent.com/linuxgurugamer/StructuralTubingRestructured/master/StructuralTubingRestructured.version",
+    "URL": "http://ksp.spacetux.net/avc/StructuralTubingRestructured",
     "DOWNLOAD": "https://github.com/linuxgurugamer/StructuralTubingRestructured/releases",
     "GITHUB": {
         "USERNAME": "linuxgurugamer",
@@ -10,7 +10,7 @@
         "MAJOR": 1,
         "MINOR": 0,
         "PATCH": 7,
-        "BUILD": 2
+        "BUILD": 3
     },
     "KSP_VERSION": {
         "MAJOR": 1,
@@ -24,7 +24,7 @@
     },
     "KSP_VERSION_MAX": {
         "MAJOR": 1,
-        "MINOR": 4,
+        "MINOR": 5,
         "PATCH": 99
     }
 }

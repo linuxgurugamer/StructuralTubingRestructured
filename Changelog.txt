@@ -2,6 +2,9 @@
 |   CHANGELOG (latest first):   |
 +-------------------------------+
 
+1.0.7.3
+	Version bump for 1.5
+	
 1.0.7.2
 	Fixed name and description for the 250, 300 and 500mm tubes (had cm
 	instead of mm)
