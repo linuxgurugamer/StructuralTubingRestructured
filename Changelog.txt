@@ -2,6 +2,9 @@
 |   CHANGELOG (latest first):   |
 +-------------------------------+
 
+1.0.8
+	Updated for KSP 1.8
+
 1.0.7.3
 	Version bump for 1.5
 	
