@@ -2,6 +2,9 @@
 |   CHANGELOG (latest first):   |
 +-------------------------------+
 
+1.0.8.1
+	Added missing title to agent
+
 1.0.8
 	Updated for KSP 1.8
 
